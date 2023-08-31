@@ -23,8 +23,8 @@ parser = argparse.ArgumentParser(
                     prog=(sys.argv[0].split("/"))[-1],
                     description='''
 Converts Flipper HEX data into Integers, Binary and ASCII data for further investigation.\n
-If no optional arguments are given then data will be converted to all supported formats.\n
-Existing output file will be overwritten.''',
+If no optional arguments are given then data will be converted to Decimal format.\n
+Existing output file or folder will be overwritten.''',
                     formatter_class=argparse.RawDescriptionHelpFormatter,
                     epilog="Hack the Planet!")
 parser.add_argument("inputname", help="Input source name. Can be single file or folder", metavar="filename|foldername")
