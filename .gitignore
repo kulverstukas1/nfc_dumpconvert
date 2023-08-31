@@ -1,0 +1,3 @@
+*.py
+*.nfc
+!nfc_dumpconvert.py
