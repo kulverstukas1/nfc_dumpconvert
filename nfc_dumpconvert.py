@@ -74,7 +74,7 @@ def convertToBin(inFileObj, bare):
             binValF = [f"{x:0>8b}" for x in hex]
             fLine = " ".join(binValF)
             if (bare):
-                processedLines.append(fLine)
+                processedLines.append("%s %s %s" % (lineParts[0], lineParts[1], fLine))
             else:
                 processedLines.append(line.rstrip() + ' # ' + fLine)
         else:
